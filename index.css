@@ -1,0 +1,139 @@
+:root {
+  --dark: #374151;
+  --darker: #1f2937;
+  --darkest: #111827;
+  --gray: #6b7280;
+  --light: #eee;
+  --pink: #ec489aab;
+  --purple: #4c08ea8d;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--dark);
+  color: wheat;
+}
+
+header {
+  padding: 2em 1em;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--gray);
+  text-align: center;
+}
+
+form {
+  display: flex;
+}
+
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+input {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+#task {
+  flex: 1 1 0%;
+  background-color: var(--darker);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-right: 1rem;
+  color: var(--light);
+  font-size: 1.25rem;
+}
+
+#task::placeholder {
+  color: var(--gray);
+}
+
+#add {
+  color: var(--purple);
+  background-color: rgba(144, 238, 144, 0.603);
+  border-radius: 1rem;
+  font-size: 1.25em;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#add:active {
+  opacity: 0.6;
+}
+
+main {
+  padding: 2em 1em;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.task-list h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--gray);
+  text-align: center;
+}
+
+#tasks .tasks {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--darkest);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+#tasks .tasks .content .text {
+  color: var(--light);
+  font-size: 1.125rem;
+  width: 270%;
+  display: block;
+  transition: 0.4s;
+}
+
+#tasks .tasks .action {
+  display: flex;
+  margin: 0 --0.5rem;
+}
+.tasks .actions button {
+  color: var(--purple);
+  background-color: rgba(144, 238, 144, 0.758);
+  border-radius: 0.5rem;
+  font-size: 1em;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.tasks .actions button:active{
+    opacity: 0.6;
+}
+
+.tasks .actions .delete{
+    background-color: rgba(255, 0, 0, 0.575);
+    color: rgba(255, 255, 255, 0.865);
+}
+
